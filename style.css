@@ -5373,3 +5373,165 @@ textarea:focus {
         right: 12px !important;
     }
 }
+
+/* =========================================================
+   BLUEPEAK FINAL MOBILE HEADER FIX
+========================================================= */
+
+@media (max-width: 910px) {
+
+    .navbar {
+        min-height: 70px !important;
+        width: 100% !important;
+        gap: 10px !important;
+    }
+
+    .brand {
+        min-width: 0 !important;
+        width: auto !important;
+        max-width: calc(100% - 54px) !important;
+        flex: 1 1 auto !important;
+        overflow: hidden !important;
+    }
+
+    .brand-logo {
+        width: 135px !important;
+        max-width: 135px !important;
+        max-height: 48px !important;
+        flex-shrink: 1 !important;
+        object-fit: contain !important;
+    }
+
+    /* Mobile par extra brand text hide */
+    .brand-text {
+        display: none !important;
+    }
+
+    /* Desktop navigation completely remove from header layout */
+    .nav-menu {
+        display: none !important;
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+        display: flex !important;
+        width: 42px !important;
+        height: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+        flex-shrink: 0 !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+
+        position: relative !important;
+        z-index: 1002 !important;
+
+        border: 1px solid var(--border) !important;
+        border-radius: 10px !important;
+        background: #ffffff !important;
+    }
+
+    .menu-toggle span {
+        display: block !important;
+        width: 19px !important;
+        height: 2px !important;
+        background: var(--text-dark) !important;
+        border-radius: 2px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE MENU — SHOW ONLY WHEN OPEN
+========================================================= */
+
+@media (max-width: 910px) {
+
+    .nav-menu.open {
+        position: fixed !important;
+
+        top: 76px !important;
+        left: 12px !important;
+        right: 12px !important;
+
+        width: auto !important;
+        max-width: none !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+
+        gap: 4px !important;
+        padding: 12px !important;
+
+        background: #ffffff !important;
+
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 16px !important;
+
+        box-shadow:
+            0 20px 45px rgba(15, 23, 42, 0.12),
+            0 4px 12px rgba(15, 23, 42, 0.05) !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+
+        z-index: 1001 !important;
+    }
+
+    .nav-menu.open .nav-link {
+        display: flex !important;
+        align-items: center !important;
+
+        width: 100% !important;
+        min-height: 44px !important;
+
+        padding: 11px 14px !important;
+
+        border-radius: 10px !important;
+
+        font-size: 14px !important;
+    }
+
+    .nav-menu.open .mobile-cta {
+        display: flex !important;
+        width: 100% !important;
+        min-height: 44px !important;
+        margin-top: 8px !important;
+    }
+
+    .desktop-cta {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .navbar {
+        min-height: 66px !important;
+    }
+
+    .brand-logo {
+        width: 125px !important;
+        max-width: 125px !important;
+        max-height: 45px !important;
+    }
+
+    .menu-toggle {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        max-width: 40px !important;
+    }
+
+    .nav-menu.open {
+        top: 70px !important;
+        left: 10px !important;
+        right: 10px !important;
+    }
+}
